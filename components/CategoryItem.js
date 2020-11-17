@@ -3,10 +3,10 @@ import React from 'react'
 import { Image, View, Text, StyleSheet } from 'react-native'
 import CatItem from '../assets/heart.png'
 
-export default function CategoryItem(){
+export default function CategoryItem({name}){
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Cat's House</Text>
+      <Text style={styles.title}>{name}</Text>
       <Image style={styles.categoryImage} source={ CatItem }/>
     </View>
     )
